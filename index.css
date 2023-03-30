@@ -1,0 +1,14 @@
+h1{
+    align-content: center;
+    color:blueviolet;
+    text-align:center;
+}
+h3{
+  align-items: right;
+  align-content:right;
+  margin-top: 10px;
+  margin-left:1000px;
+}
+#movieContainer{
+    
+}
