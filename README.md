@@ -1,4 +1,4 @@
-# Code-Challenge-2(VOTES)
+# Code-Challenge-3(FLATDANGO MOVIE THEATER)
 *****
 ### AUTHOR:EMMANUEL MUKIRA  Date:MARCH 29TH
 ****

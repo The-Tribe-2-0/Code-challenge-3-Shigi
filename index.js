@@ -1,3 +1,4 @@
+/// Code for fetching a particular movies details
 fetch('http://localhost:3000/films')
         .then(response => response.json())
         .then(data => {
@@ -9,25 +10,23 @@ fetch('http://localhost:3000/films')
             movieContainer.appendChild(listItem);
           });
         });
- // Display details for selected movie
+ // Display details for a selected movie
  function showMovieDetails(films) {
     const filmsDetails = document.getElementById('movieContainer');
     filmsDetails.innerHTML = `
-    <label>MOVIE TITLE:</label><h2>${films.title}</h2>
-      <img src="${films.poster}" alt="">
+    <strong><label>MOVIE TITLE:</label></strong><h2>${films.title}</h2>
+      <img src="${films.poster}" alt="${films.title}" style="max-width:300px">
       <br>
-      <label>MOVIE ID:</label><p>${films.id}</p>
-      <label>MOVIE RUNTIME:</label><p>${films.runtime}</p>
-      <label>AVAILABLE TICKETS:</label><p> [${films.capacity}-${films.tickets_sold}]</p>
-       <label>MOVIE SHOWTIME:</label> <p>${films.showtime}</p>
-       <label>MOVIE CAPACITY:</label><p>${films.capacity}</p>
-       <label>MOVIE DESCRIPTION:</label><p>${films.description}</p>
+      <strong><label>MOVIE ID:</label></strong><p>${films.id}</p>
+      <strong><label>MOVIE SHOWTIME:</label></strong><p>${films.showtime}</p>
+      <strong><label>MOVIE RUNTIME:</label></strong><p>${films.runtime}</p>
+      <strong><label>AVAILABLE TICKETS:</label></strong><p> ${films.capacity - films.tickets_sold}</p>
+      <strong><label>TICKETS SOLD:</label></strong><p>${films.tickets_sold}</p>
+       <strong><label>MOVIE CAPACITY:</label></strong><p>${films.capacity}</p>
+       <strong><label>MOVIE DESCRIPTION:</label></strong><p>${films.description}</p>
     `;
  }
-    // Code for making a buy ticket button
-  const returnButton = document.getElementById('return-button');
+    const returnButton = document.getElementById('returnButton');
     returnButton.addEventListener('click', () => {
-      const voteCount = document.getElementById('vote-count');
-     animal.votes++;
-      voteCo.texunttContent = animal.votes;
+        location.reload();
     });

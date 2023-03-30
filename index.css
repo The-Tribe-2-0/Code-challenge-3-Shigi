@@ -1,7 +1,8 @@
 h1{
     align-content: center;
-    color:blueviolet;
+    color: black;
     text-align:center;
+
 }
 h3{
   align-items: right;
@@ -9,6 +10,15 @@ h3{
   margin-top: 10px;
   margin-left:1000px;
 }
-#movieContainer{
+#main{
+    position:absolute;
+    top:0;
+    right:0;
+    width:70%;
+    padding:20px;
     
+}
+#returnButton{
+font-weight: bold;
+color:red;
 }
