@@ -14,7 +14,7 @@
 function showMovieDetails(film) {
   const movieDetails = document.getElementById('movieContainer');
   movieDetails.innerHTML = `
-    <strong><label>MOVIE TITLE:</label></strong><h2>${film.title}</h2>  <br> <button id="ticketButton">Buy Ticket</button>
+    <strong><label>MOVIE TITLE:</label></strong><h2>${film.title}</h2>
     <img src="${film.poster}" alt="${film.title}" style="max-width:300px">
     <br>
     <strong><label>MOVIE ID:</label></strong><p>${film.id}</p>
@@ -23,7 +23,7 @@ function showMovieDetails(film) {
     <strong><label>TICKETS SOLD:</label></strong><p>${film.tickets_sold}</p>
     <strong><label>MOVIE CAPACITY:</label></strong><p>${film.capacity}</p>
     <strong><label>MOVIE DESCRIPTION:</label></strong><p>${film.description}</p>
-    
+    <button id="ticketButton">Buy Ticket</button>
   `;
 
   const buyTicketButton = document.getElementById('ticketButton');
